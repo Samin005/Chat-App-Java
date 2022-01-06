@@ -34,10 +34,6 @@ public class Server {
                     dataOutputStream.flush();
 
                 }
-                scanner.close();
-                dataInputStream.close();
-                serverSocket.close();
-                socket.close();
             }
         } catch (Exception e) {
             System.out.println(e);
