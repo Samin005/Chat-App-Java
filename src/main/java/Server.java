@@ -5,8 +5,8 @@ import java.net.Socket;
 import java.util.Scanner;
 
 public class Server {
+    public static int SERVER_PORT = 6666;
     public static void main(String[] args) {
-        int SERVER_PORT = 6666;
         try {
             ServerSocket serverSocket = new ServerSocket(SERVER_PORT);
             while (true) {

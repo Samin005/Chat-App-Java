@@ -4,9 +4,10 @@ import java.net.Socket;
 import java.util.Scanner;
 
 public class Client {
+    public static int CLIENT_PORT = 6666;
     public static void main(String[] args) {
         try {
-            Socket socket = new Socket("localhost", 6666);
+            Socket socket = new Socket("localhost", CLIENT_PORT);
 
             DataOutputStream dataOutputStream = new DataOutputStream(socket.getOutputStream());
             DataInputStream dataInputStream = new DataInputStream(socket.getInputStream());
